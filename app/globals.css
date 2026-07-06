@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Boje - industrijska/zanatska paleta */
+  --color-ink: #1b1815;
+  --color-ink-soft: #2c2723;
+  --color-brick: #b5451f;
+  --color-brick-dark: #963a19;
+  --color-stone: #f4efe6;
+  --color-stone-dark: #e7dfd0;
+  --color-paper: #fbf9f4;
+  --color-muted: #6f6559;
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-oswald);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-stone);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-brick);
+  color: var(--color-paper);
+}
