@@ -27,7 +27,7 @@ export function About() {
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink">
               <p>
                 Zidarski i krovopokrivački zanat radim godinama, sa
-                fokusom na poslove koji se često nađu „između" – premali
+                fokusom na poslove koji se često nađu „između“ – premali
                 za velike građevinske firme, a prezahtevni da bi ih
                 domaćin sam odradio. Kod mene takav posao ima svoje
                 mesto.
