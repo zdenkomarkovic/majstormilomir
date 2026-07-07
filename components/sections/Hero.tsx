@@ -8,7 +8,7 @@ export function Hero() {
     <section id="pocetna" className="relative flex min-h-[85vh] items-end overflow-hidden bg-ink">
       <Image
         src="/IMG-d02d3e9414b2aed5354489fa8c321d6c-V.jpg"
-        alt="Zavrsen krovni i zidarski rad – metalna konstrukcija i ulaz"
+        alt="Zavrsen zidarski i gradjevinski rad – metalna konstrukcija i ulaz"
         fill
         priority
         sizes="100vw"
@@ -21,10 +21,10 @@ export function Hero() {
           {LOCATION} · {SERVICE_AREA}
         </p>
         <h1 className="max-w-3xl font-heading text-4xl leading-[1.1] font-bold tracking-tight text-paper uppercase sm:text-5xl md:text-6xl">
-          Krovopokrivač i zidar u Beogradu i okolini
+          Zidar i građevinski majstor u Beogradu i okolini
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-dark">
-          Majstor za sve manje i veće radove oko kuće i imanja – od opravke krova do nove kapije.
+          Majstor za sve manje i veće radove oko kuće i imanja – od zidanja, šalovanja i rušenja do nove kapije.
           Radim poslove koje veće građevinske firme ne prihvataju, i najneuobičajenije zahteve
           naručioca.
         </p>

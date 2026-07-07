@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 const POINTS = [
   {
     title: "Svi manji radovi",
-    text: "Radim sve manje radove oko kuće, dvorišta i krova – bez obzira na to koliko posao izgleda sitno ili nezanimljivo za druge.",
+    text: "Radim sve manje radove oko kuće i dvorišta – zidanje, šalovanje, rušenje, staze i trotoare – bez obzira na to koliko posao izgleda sitno ili nezanimljivo za druge.",
   },
   {
     title: "Poslovi koje veliki ne prihvataju",

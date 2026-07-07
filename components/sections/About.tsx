@@ -26,16 +26,17 @@ export function About() {
             />
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink">
               <p>
-                Zidarski i krovopokrivački zanat radim godinama, sa
-                fokusom na poslove koji se često nađu „između“ – premali
+                Zidarski i građevinski zanat radim godinama: zidanje,
+                šalovanje i armiranje, rušenje zidova i betona. Fokus mi
+                je na poslovima koji se često nađu „između“ – premali
                 za velike građevinske firme, a prezahtevni da bi ih
                 domaćin sam odradio. Kod mene takav posao ima svoje
                 mesto.
               </p>
               <p>
                 Bazu imam u Ripnju, a radim u široj okolini Beograda i
-                širom Srbije. Svaki posao, od manje opravke krova do
-                nove kapije ili potpornog zida, dogovaramo unapred –
+                širom Srbije. Svaki posao, od sitne zidarske intervencije
+                do nove kapije ili potpornog zida, dogovaramo unapred –
                 rok, materijal i cenu, bez iznenađenja.
               </p>
               <p>

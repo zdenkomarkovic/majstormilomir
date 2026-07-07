@@ -8,7 +8,7 @@ export const SITE_NAME =
   process.env.NEXT_PUBLIC_SITE_NAME ?? "Zidar Milomir Isailović";
 
 export const SITE_DESCRIPTION =
-  "Krovne konstrukcije, opravke i prepokrivanje krovova, uređenje dvorišta, ograde, garaže i kapije. Milomir Isailović – zidarski majstor iz Ripnja, radi u okolini Beograda i širom Srbije.";
+  "Građevinski mali radovi – zidanje, šalovanje i armiranje, rušenje, uređenje dvorišta, ograde, garaže i kapije. Milomir Isailović – zidarski majstor iz Ripnja, radi u okolini Beograda i širom Srbije.";
 
 // ─── Podaci o majstoru / firmi ────────────────────────────────────────────────
 

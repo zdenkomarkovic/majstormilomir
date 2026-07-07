@@ -21,7 +21,7 @@ const oswald = Oswald({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Krovovi, dvorišta, ograde i kapije`,
+    default: `${SITE_NAME} | Zidarski radovi, dvorišta, ograde i kapije`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     locale: "sr_RS",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} | Krovovi, dvorišta, ograde i kapije`,
+    title: `${SITE_NAME} | Zidarski radovi, dvorišta, ograde i kapije`,
     description: SITE_DESCRIPTION,
   },
   twitter: {
@@ -49,7 +49,7 @@ export default function RootLayout({
         <JsonLd
           data={{
             "@context": "https://schema.org",
-            "@type": "RoofingContractor",
+            "@type": "GeneralContractor",
             name: SITE_NAME,
             founder: OWNER_NAME,
             description: SITE_DESCRIPTION,

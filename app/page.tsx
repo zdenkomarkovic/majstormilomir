@@ -13,9 +13,9 @@ import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 
 export const metadata = buildMetadata({
-  title: "Krovovi, dvorišta, ograde i kapije",
+  title: "Zidarski radovi, dvorišta, ograde i kapije",
   description:
-    "Opravke i prepokrivanje krovova, krovne konstrukcije, uređenje dvorišta, garaže i reprezentativne kapije. Ripanj, okolina Beograda i cela Srbija.",
+    "Građevinski mali radovi, zidanje i betoniranje, uređenje dvorišta, garaže i reprezentativne kapije. Ripanj, okolina Beograda i cela Srbija.",
 });
 
 export default function HomePage() {

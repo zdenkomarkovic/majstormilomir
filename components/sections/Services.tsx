@@ -4,31 +4,24 @@ import { ServiceGroup } from "@/components/ui/ServiceGroup";
 const SERVICE_GROUPS = [
   {
     number: "01",
-    title: "Krovne konstrukcije",
+    title: "Građevinski mali radovi",
     subgroups: [
       {
-        label: "Manji radovi na krovovima",
+        label: "Zidarski radovi",
         items: [
-          "Opravke krovova",
-          "Prepokrivanje krovova",
-          "Pokrivanje terasa",
-          "Letnjikovci (drveni i metalni)",
-          "Pergole svih vrsta i materijala",
+          "Zidanje",
+          "Šalovanje i armiranje",
+          "Pregradni zidovi",
+          "Stepeništa",
         ],
       },
       {
-        label: "Kompletna izrada manjih krovova",
-        items: [
-          "Izrada novih krovnih konstrukcija sa pokrivanjem",
-          "Rekonstrukcija postojećih krovova",
-        ],
+        label: "Staze i trotoari",
+        items: ["Betoniranje staza i trotoara", "Uređenje prilaza i platoa"],
       },
       {
-        label: "Oluci i odvod atmosferske vode",
-        items: [
-          "Ugradnja i zamena oluka i vertikala",
-          "Odvod atmosferske vode sa krova",
-        ],
+        label: "Rušenje i razbijanje",
+        items: ["Razbijanje i rušenje zidova", "Razbijanje i rušenje betona"],
       },
     ],
   },
@@ -77,7 +70,7 @@ export function Services() {
         <SectionHeading
           eyebrow="Šta radim"
           title="Usluge"
-          description="Od manje opravke krova do kompletnog uređenja dvorišta – svaki posao se radi po dogovoru, prilagođeno potrebama i budžetu naručioca."
+          description="Od sitnih građevinskih radova do kompletnog uređenja dvorišta – svaki posao se radi po dogovoru, prilagođeno potrebama i budžetu naručioca."
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">

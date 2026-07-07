@@ -18,9 +18,9 @@ export function Footer() {
               {OWNER_NAME}
             </p>
             <p className="mt-2 text-sm leading-relaxed">
-              Krovne konstrukcije i razni radovi u okviru domaćinstva. Sve
-              manje radove, kao i one koje veće građevinske firme ne
-              prihvataju.
+              Građevinski mali radovi – zidanje, šalovanje i armiranje,
+              rušenje – i razni poslovi u okviru domaćinstva. Sve manje
+              radove, kao i one koje veće građevinske firme ne prihvataju.
             </p>
           </div>
 

@@ -5,7 +5,7 @@ const FAQ_ITEMS = [
   {
     question: "Da li radite i manje poslove, ili samo veće projekte?",
     answer:
-      "Radim bukvalno sve, od sitne opravke krova do kompletne rekonstrukcije. Nema posla koji je „premali“ za mene.",
+      "Radim bukvalno sve, od zidanja i šalovanja do rušenja i kompletne rekonstrukcije. Nema posla koji je „premali“ za mene.",
   },
   {
     question: "Da li dolazite na besplatnu procenu?",
@@ -30,7 +30,7 @@ const FAQ_ITEMS = [
   {
     question: "Da li radite tokom zime?",
     answer:
-      "Manji radovi i opravke mogu se raditi tokom cele godine. Veći radovi na krovu zavise od vremenskih uslova, pa se termin prilagođava vremenskoj prognozi.",
+      "Manji radovi i opravke mogu se raditi tokom cele godine. Veći spoljni radovi zavise od vremenskih uslova, pa se termin prilagođava vremenskoj prognozi.",
   },
 ];
 
