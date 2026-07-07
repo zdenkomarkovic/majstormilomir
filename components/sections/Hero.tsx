@@ -21,7 +21,7 @@ export function Hero() {
           {LOCATION} · {SERVICE_AREA}
         </p>
         <h1 className="max-w-3xl font-heading text-4xl leading-[1.1] font-bold tracking-tight text-paper uppercase sm:text-5xl md:text-6xl">
-          Zidar i građevinski majstor u Beogradu i okolini
+          Zidar, tesar i građevinski majstor u Beogradu i okolini
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-dark">
           Majstor za sve manje i veće radove oko kuće i imanja – od zidanja, šalovanja i rušenja do nove kapije.

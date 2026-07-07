@@ -26,7 +26,7 @@ export function About() {
             />
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink">
               <p>
-                Zidarski i građevinski zanat radim godinama: zidanje,
+                Zidarski, tesarski i građevinski zanat radim godinama: zidanje,
                 šalovanje i armiranje, rušenje zidova i betona. Fokus mi
                 je na poslovima koji se često nađu „između“ – premali
                 za velike građevinske firme, a prezahtevni da bi ih

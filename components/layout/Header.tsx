@@ -23,7 +23,7 @@ export function Header() {
         >
           {OWNER_NAME}
           <span className="block text-xs font-normal tracking-[0.2em] text-brick">
-            Zidarski i građevinski radovi
+            Zidarski, tesarski i građevinski radovi
           </span>
         </a>
 

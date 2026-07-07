@@ -13,7 +13,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 
 export const metadata = buildMetadata({
-  title: "Zidarski radovi, dvorišta, ograde i kapije",
+  title: "Zidarski, tesarski i građevinski radovi, dvorišta, ograde i kapije",
   description:
     "Građevinski mali radovi, zidanje i betoniranje, uređenje dvorišta, garaže i reprezentativne kapije. Ripanj, okolina Beograda i cela Srbija.",
 });
