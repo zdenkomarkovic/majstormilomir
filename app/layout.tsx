@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     type: "website",
     locale: "sr_RS",
@@ -32,9 +35,20 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} | Zidarski, tesarski i građevinski radovi, dvorišta, ograde i kapije`,
     description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: SITE_NAME,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    title: `${SITE_NAME} | Zidarski, tesarski i građevinski radovi, dvorišta, ograde i kapije`,
+    description: SITE_DESCRIPTION,
+    images: [`${SITE_URL}/og-image.png`],
   },
 };
 
@@ -55,6 +69,7 @@ export default function RootLayout({
             description: SITE_DESCRIPTION,
             telephone: PHONE_DISPLAY,
             url: SITE_URL,
+            image: `${SITE_URL}/og-image.png`,
             address: {
               "@type": "PostalAddress",
               addressLocality: "Ripanj",

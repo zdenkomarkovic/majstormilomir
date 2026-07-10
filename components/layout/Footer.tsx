@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   LOCATION,
   OWNER_NAME,
@@ -14,13 +15,22 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
-            <p className="font-heading text-lg font-semibold text-paper uppercase">
-              {OWNER_NAME}
-            </p>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt={`${OWNER_NAME} logo`}
+                width={40}
+                height={40}
+                className="h-24 w-24 shrink-0"
+              />
+              <p className="font-heading text-lg font-semibold text-paper uppercase">
+                {OWNER_NAME}
+              </p>
+            </div>
             <p className="mt-2 text-sm leading-relaxed">
-              Građevinski mali radovi – zidanje, šalovanje i armiranje,
-              rušenje – i razni poslovi u okviru domaćinstva. Sve manje
-              radove, kao i one koje veće građevinske firme ne prihvataju.
+              Građevinski mali radovi – zidanje, šalovanje i armiranje, rušenje – i razni poslovi u
+              okviru domaćinstva. Sve manje radove, kao i one koje veće građevinske firme ne
+              prihvataju.
             </p>
           </div>
 
@@ -28,10 +38,7 @@ export function Footer() {
             <p className="font-heading text-sm font-semibold tracking-wide text-paper uppercase">
               Kontakt
             </p>
-            <a
-              href={PHONE_HREF}
-              className="mt-2 block text-sm hover:text-brick"
-            >
+            <a href={PHONE_HREF} className="mt-2 block text-sm hover:text-brick">
               {PHONE_DISPLAY}
             </a>
             <p className="mt-1 text-sm">{LOCATION}</p>
@@ -41,9 +48,7 @@ export function Footer() {
             <p className="font-heading text-sm font-semibold tracking-wide text-paper uppercase">
               Radno područje
             </p>
-            <p className="mt-2 text-sm leading-relaxed">
-              {SERVICE_AREA_LABEL}
-            </p>
+            <p className="mt-2 text-sm leading-relaxed">{SERVICE_AREA_LABEL}</p>
           </div>
         </div>
 

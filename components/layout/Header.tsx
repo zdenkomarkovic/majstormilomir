@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { OWNER_NAME } from "@/lib/constants";
 import { PhoneButton } from "@/components/ui/PhoneButton";
 
@@ -16,14 +17,23 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-stone-dark bg-paper/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-1 sm:px-6">
         <a
           href="#pocetna"
-          className="font-heading text-lg font-semibold tracking-tight text-ink uppercase sm:text-xl"
+          className="flex items-center gap-3 font-heading text-lg font-semibold tracking-tight text-ink uppercase sm:text-xl"
         >
-          {OWNER_NAME}
-          <span className="block text-xs font-normal tracking-[0.2em] text-brick">
-            Zidarski, tesarski i građevinski radovi
+          <Image
+            src="/logo.png"
+            alt={`${OWNER_NAME} logo`}
+            width={44}
+            height={44}
+            className="h-14 w-14 shrink-0 sm:h-16 sm:w-16"
+          />
+          <span>
+            {OWNER_NAME}
+            <span className="block text-xs font-normal tracking-[0.2em] text-brick">
+              Zidarski, tesarski i građevinski radovi
+            </span>
           </span>
         </a>
 
