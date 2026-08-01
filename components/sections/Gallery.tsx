@@ -76,10 +76,59 @@ const PHOTOS = [
     alt: "Gradilište u okolini Beograda",
     span: "",
   },
+  {
+    src: "/IMG-17d485d933edef5ed134b12e4dc3efa7-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-3e9e36f4aab441001dee742b47294939-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-b427e336800bc386e2d0d043c5613050-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-d5af8ce9bc64908fcb16a142110337ff-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-d8ebca7598fa802783ab4f2f354b46dd-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-dc1904b057c3724c93d976837de25ddf-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-e7ca3c822f7d5fa248d1a483d110d341-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-ed72d3719da501753e6c3930c2658df2-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-eff91ab1084c8a34fb7160c25332015f-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
 ];
+
+const PAGE_SIZE = 12;
+const TOTAL_PAGES = Math.ceil(PHOTOS.length / PAGE_SIZE);
 
 export function Gallery() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [page, setPage] = useState(0);
 
   const close = useCallback(() => setOpenIndex(null), []);
   const showPrev = useCallback(
@@ -103,6 +152,12 @@ export function Gallery() {
   }, [openIndex, close, showPrev, showNext]);
 
   const activePhoto = openIndex !== null ? PHOTOS[openIndex] : undefined;
+  const pagedPhotos = PHOTOS.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
+
+  const goToPage = useCallback((p: number) => {
+    setPage(p);
+    document.getElementById("galerija")?.scrollIntoView({ block: "start" });
+  }, []);
 
   return (
     <section id="galerija" className="bg-paper py-20 sm:py-28">
@@ -114,24 +169,82 @@ export function Gallery() {
         />
 
         <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:grid-flow-dense sm:gap-5">
-          {PHOTOS.map((photo, i) => (
-            <button
-              key={photo.src}
-              type="button"
-              onClick={() => setOpenIndex(i)}
-              aria-label="Prikaži sliku u punoj veličini"
-              className={`group relative aspect-4/3 overflow-hidden rounded-sm bg-ink ${photo.span}`}
-            >
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                sizes="(min-width: 640px) 25vw, 50vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </button>
-          ))}
+          {pagedPhotos.map((photo, i) => {
+            const globalIndex = page * PAGE_SIZE + i;
+            return (
+              <button
+                key={photo.src}
+                type="button"
+                onClick={() => setOpenIndex(globalIndex)}
+                aria-label="Prikaži sliku u punoj veličini"
+                className={`group relative aspect-4/3 overflow-hidden rounded-sm bg-ink ${photo.span}`}
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(min-width: 640px) 25vw, 50vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </button>
+            );
+          })}
         </div>
+
+        {TOTAL_PAGES > 1 && (
+          <div className="mt-10 flex items-center justify-center gap-2">
+            <button
+              type="button"
+              onClick={() => goToPage(Math.max(0, page - 1))}
+              disabled={page === 0}
+              aria-label="Prethodna strana"
+              className="flex h-9 w-9 items-center justify-center rounded-sm text-ink transition-colors hover:text-brick disabled:opacity-30 disabled:hover:text-ink"
+            >
+              <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
+                <path
+                  d="M15 6l-6 6 6 6"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+
+            {Array.from({ length: TOTAL_PAGES }, (_, p) => (
+              <button
+                key={p}
+                type="button"
+                onClick={() => goToPage(p)}
+                aria-label={`Strana ${p + 1}`}
+                aria-current={p === page ? "page" : undefined}
+                className={`flex h-9 w-9 items-center justify-center rounded-sm text-sm transition-colors ${
+                  p === page ? "bg-ink text-paper" : "text-ink hover:text-brick"
+                }`}
+              >
+                {p + 1}
+              </button>
+            ))}
+
+            <button
+              type="button"
+              onClick={() => goToPage(Math.min(TOTAL_PAGES - 1, page + 1))}
+              disabled={page === TOTAL_PAGES - 1}
+              aria-label="Sledeća strana"
+              className="flex h-9 w-9 items-center justify-center rounded-sm text-ink transition-colors hover:text-brick disabled:opacity-30 disabled:hover:text-ink"
+            >
+              <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
+                <path
+                  d="M9 6l6 6-6 6"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
 
       {activePhoto && (
