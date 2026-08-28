@@ -121,6 +121,31 @@ const PHOTOS = [
     alt: "Radovi na gradilištu",
     span: "",
   },
+  {
+    src: "/IMG-30a04d2f91bc85d0d2b98ec64b7e445a-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-476677f12cf28e959448437608da96d7-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-4801a4c7021bbaa76e192f3451d50e92-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-8fba3c4eb4322b2c264f9251e11a653e-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
+  {
+    src: "/IMG-a6eab8bca7bb04b2c5f5321e1a406177-V.jpg",
+    alt: "Radovi na gradilištu",
+    span: "",
+  },
 ];
 
 const PAGE_SIZE = 12;
