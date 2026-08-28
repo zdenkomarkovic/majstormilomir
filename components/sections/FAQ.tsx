@@ -14,19 +14,14 @@ const FAQ_ITEMS = [
   },
   {
     question: "Koliko brzo mogu da očekujem izlazak na teren?",
-    answer:
-      "Obično u roku od par dana od poziva, u zavisnosti od trenutnog rasporeda poslova.",
+    answer: "Obično u roku od par dana od poziva, u zavisnosti od trenutnog rasporeda poslova.",
   },
   {
     question: "Da li obezbeđujete materijal ili radite samo uslugu?",
     answer:
       "Može oboje – dogovaramo se unapred da li materijal nabavljate vi ili ja, u zavisnosti šta vam više odgovara.",
   },
-  {
-    question: "Da li radite van Ripnja i okoline Beograda?",
-    answer:
-      "Da, radim širom Srbije po dogovoru – udaljenost nije prepreka za ozbiljan posao.",
-  },
+
   {
     question: "Da li radite tokom zime?",
     answer:
@@ -53,10 +48,7 @@ export function FAQ() {
       />
 
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
-        <SectionHeading
-          eyebrow="Pitanja i odgovori"
-          title="Često postavljana pitanja"
-        />
+        <SectionHeading eyebrow="Pitanja i odgovori" title="Često postavljana pitanja" />
 
         <div className="mt-10 divide-y divide-stone-dark border-t border-b border-stone-dark">
           {FAQ_ITEMS.map((item) => (

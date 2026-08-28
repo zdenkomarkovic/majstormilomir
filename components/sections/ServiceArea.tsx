@@ -8,7 +8,7 @@ export function ServiceArea() {
         <SectionHeading
           eyebrow="Radno područje"
           title="Gde radim"
-          description={`Zidarski, tesarski i građevinski radovi izvode se u ${SERVICE_PLACES[0]}, ${SERVICE_PLACES[1]}, ${SERVICE_PLACES[2]} i okolnim mestima – kao i šire, u okolini Beograda i širom Srbije po dogovoru.`}
+          description={`Zidarski, tesarski i građevinski radovi izvode se u ${SERVICE_PLACES[0]}, ${SERVICE_PLACES[1]}, ${SERVICE_PLACES[2]} i okolnim mestima – kao i šire, u okolini Beograda.`}
         />
 
         <div className="mx-auto mt-10 flex max-w-3xl flex-wrap justify-center gap-3">

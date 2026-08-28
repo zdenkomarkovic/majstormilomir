@@ -24,9 +24,9 @@ export function Hero() {
           Zidar, tesar i građevinski majstor u Beogradu i okolini
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-dark">
-          Majstor za sve manje i veće radove oko kuće i imanja – od zidanja, šalovanja i rušenja do nove kapije.
-          Radim poslove koje veće građevinske firme ne prihvataju, i najneuobičajenije zahteve
-          naručioca.
+          Majstor za sve manje i veće radove oko kuće i imanja – od zidanja, šalovanja i rušenja do
+          di gradnje manjih i srednjih objekata. Radim poslove koje veće građevinske firme ne
+          prihvataju, i najneuobičajenije zahteve naručioca.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <PhoneButton />

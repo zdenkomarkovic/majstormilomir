@@ -8,20 +8,19 @@ const SERVICE_GROUPS = [
     subgroups: [
       {
         label: "Zidarski radovi",
-        items: [
-          "Zidanje",
-          "Šalovanje i armiranje",
-          "Pregradni zidovi",
-          "Stepeništa",
-        ],
+        items: ["Zidanje", "Šalovanje i armiranje", "Pregradni zidovi", "Stepeništa"],
       },
       {
         label: "Staze i trotoari",
-        items: ["Betoniranje staza i trotoara", "Uređenje prilaza i platoa"],
+        items: ["Betoniranje staza i trotoara"],
       },
       {
         label: "Rušenje i razbijanje",
-        items: ["Razbijanje i rušenje zidova", "Razbijanje i rušenje betona"],
+        items: [
+          "Razbijanje i rušenje zidova",
+          "Razbijanje i rušenje betona",
+          "Otvaranje otvora u zidu za prozore i vrata",
+        ],
       },
     ],
   },
@@ -32,32 +31,15 @@ const SERVICE_GROUPS = [
       {
         label: "Uređenje dvorišta",
         items: [
-          "Betoniranje staza, ugradnja ivičnjaka",
+          "Betoniranje staza",
           "Manji potporni zidovi",
-          "Behaton ploče",
-          "Ograde svih vrsta i materijala",
+          "Betoniranje za ograde",
           "Ostali radovi po zahtevu",
         ],
       },
       {
         label: "Garaže i pomoćni objekti",
-        items: ["Zidane", "Metalne zatvorene", "Metalne otvorene"],
-      },
-      {
-        label: "Reprezentativne glavne kapije",
-        items: [
-          "Metalne, svih materijala i konstrukcija",
-          "Kombinacija beton i metal",
-          "Zidane, moravski stil – natkrivene",
-        ],
-      },
-      {
-        label: "Sanacija fasada i zidova",
-        items: [
-          "Fasadna izolacija (stiropor, mineralna vuna)",
-          "Manje popravke i ožbukavanje zidova",
-          "Renoviranje pomoćnih objekata",
-        ],
+        items: ["Zidane garaze svih vrsta"],
       },
     ],
   },
